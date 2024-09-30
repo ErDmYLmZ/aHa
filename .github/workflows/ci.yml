@@ -30,6 +30,9 @@ jobs:
       - name: Set up Maven
         run: mvn -v
 
+      - name: Check for config.properties
+        run: ls -l src/main/resources/
+
       - name: Cache Maven packages
         uses: actions/cache@v3
         with:
@@ -38,8 +41,7 @@ jobs:
             restore-keys: |
               ${{ runner.os }}-maven
 
-      - name: Check for config.properties
-        run: ls -l src/main/resources/
+
 #      - name: Build with Maven
 #        run: mvn -B clean install
 
