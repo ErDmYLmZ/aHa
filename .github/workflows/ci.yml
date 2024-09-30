@@ -41,8 +41,5 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean install -DskipTests
 
-      - name: Run Tests
+      - name: Run Tests and Generate Reports
         run: mvn verify
-
-      - name: Generate Cucumber Reports
-        run: mvn -B test-compile io.cucumber:cucumber-reporting:generate
