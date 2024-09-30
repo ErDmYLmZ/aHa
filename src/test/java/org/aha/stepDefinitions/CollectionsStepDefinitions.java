@@ -17,6 +17,8 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 public class CollectionsStepDefinitions extends BaseUrl {
+    public CollectionsStepDefinitions() {
+    }
 
     @Given("user wants to retrieve collection or object from the Rijksmuseum API in English")
     public void userWantsToRetrieveCollectionOrObjectFromTheRijksmuseumAPIInEn() {
