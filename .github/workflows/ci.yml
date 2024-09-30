@@ -11,7 +11,7 @@ on:
 
 
 jobs:
-  build:
+  acceptance_test:
     runs-on: ubuntu-latest
 
     steps:
